@@ -37,11 +37,11 @@ module.exports = yeoman.generators.Base.extend({
             }]
         }];
 
+        // set the this.mode to whatever was selected by the user
         this.prompt(prompts, function (answer) {
             var mode = answer.mode;
 
             this.mode = mode;
-            this.log('Mode choice = ' + this.mode);
             done();
 
         }.bind(this));
